@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Kwegereza",
+    "slug": "kiu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-square.png",
+    "userInterfaceStyle": "light",
+    "scheme": "kwegereza",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.kwegereza.mobile",
+      "bitcode": false
+    },
+    "android": {
+      "package": "org.kwegereza.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#08251C",
+        "foregroundImage": "./assets/icon-square.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.BLUETOOTH"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 140,
+          "resizeMode": "contain",
+          "backgroundColor": "#08251C"
+        }
+      ],
+      "expo-status-bar",
+      "expo-secure-store",
+      "expo-font",
+      "expo-audio",
+      "expo-notifications",
+      "@livekit/react-native-expo-plugin",
+      "@config-plugins/react-native-webrtc",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "92f5395d-aee4-47aa-a10a-0352e01837ad"
+      }
+    },
+    "owner": "bikman"
+  }
+}
