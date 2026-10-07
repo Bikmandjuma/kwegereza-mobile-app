@@ -1,0 +1,16 @@
+diff --git a/node_modules/@config-plugins/react-native-webrtc/build/withDesugaring.js b/node_modules/@config-plugins/react-native-webrtc/build/withDesugaring.js
+index afc0ef0..e5e43a3 100644
+--- a/node_modules/@config-plugins/react-native-webrtc/build/withDesugaring.js
++++ b/node_modules/@config-plugins/react-native-webrtc/build/withDesugaring.js
+@@ -15,11 +15,6 @@ const withDesugaring = (config, isDisabled) => {
+             }
+             return true;
+         });
+-        config.modResults.push({
+-            type: "property",
+-            key: desugaringKey,
+-            value: String(!isDisabled),
+-        });
+         return config;
+     });
+ };
